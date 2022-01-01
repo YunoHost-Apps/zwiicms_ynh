@@ -29,7 +29,7 @@ path_url=$YNH_APP_ARG_PATH
 admin=$YNH_APP_ARG_ADMIN
 is_public=$YNH_APP_ARG_IS_PUBLIC
 #language=$YNH_APP_ARG_LANGUAGE
-password=$YNH_APP_ARG_PASSWORD
+#password=$YNH_APP_ARG_PASSWORD
 
 ### If it's a multi-instance app, meaning it can be installed several times independently
 ### The id of the app as stated in the manifest is available as $YNH_APP_ID
@@ -248,7 +248,7 @@ installUrl="/?install"
 # "installSubmit=installSubmit"
 
 # Remove the public access
-ynh_permission_update --permission="main" --remove="visitors"
+#ynh_permission_update --permission="main" --remove="visitors"
 
 #=================================================
 # MODIFY A CONFIG FILE
