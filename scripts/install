@@ -243,8 +243,8 @@ ynh_add_fpm_config
 #ynh_local_curl "/INSTALL_PATH" "key1=value1" "key2=value2" "key3=value3"
 
 installUrl="/?install"
-ynh_local_curl $installUrl "installId=$installId" "installPassword=$installPassword" "installConfirmPassword=$installConfirmPassword" "installMail=$installMail" "installFirstname=$installFirstname" "installLastname=$installLastname" "installDefaultData=$installDefaultData"
-installUrl="/?install"
+#ynh_local_curl $installUrl "installId=$installId" "installPassword=$installPassword" "installConfirmPassword=$installConfirmPassword" "installMail=$installMail" "installFirstname=$installFirstname" "installLastname=$installLastname" "installDefaultData=$installDefaultData"
+#installUrl="/?install"
 # "installSubmit=installSubmit"
 
 # Remove the public access
