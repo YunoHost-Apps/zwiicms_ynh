@@ -7,7 +7,7 @@
         "fr": "Zwii - le CMS simple, léger, sans base de données (Flat-File), modulable et responsive !"
     },
   
-    "version": "11.1.01~ynh1",    
+    "version": "11.4.02~ynh1",    
     "url": "https://zwiicms.com",
     "license": "GPL-3.0",
     "maintainer": {
