@@ -3,7 +3,7 @@
     Integration level
     Install ZwiiCMS with YunoHost
 
-Lire ce readme en français : https://github.com/pp-r/zwiicms_ynh/blob/alpha/README_fr.
+Lire ce readme en français : https://forge.chapril.org/ZwiiCMS-Team/ZwiiCMS/src/branch/master/README.md.
 
     > *This package allow you to install ZwiiCMS quickly and simply on a YunoHost server.*
 If you don't have YunoHost, please see [here](https://yunohost.org/#/install) to know how to install and enjoy it.*
