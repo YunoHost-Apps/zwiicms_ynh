@@ -14,7 +14,7 @@ Overview
 A CMS to easily create and manage your website without any programming knowledge.
 
 
-Shipped version: 11.5.09
+Shipped version: 11.5.10
 
 ## Screenshots
 
