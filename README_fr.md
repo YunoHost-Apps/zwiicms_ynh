@@ -34,7 +34,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 - Open source
 
 
-**Version incluse :** 12.2.04~ynh1
+**Version incluse :** 12.2.04~ynh2
 
 ## Captures d’écran
 
