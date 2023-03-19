@@ -2,8 +2,8 @@ packaging_format = 2
 
 id = "zwiicms"
 name = "ZwiiCMS"
-description.en = "Zwii - the simple, lightweight, database-free (Flat-File), scalable and responsive CMS!"
-description.fr = "Zwii - le CMS simple, léger, sans base de données (Flat-File), modulable et responsive !"
+description.en = "Simple, lightweight, database-free, scalable and responsive CMS"
+description.fr = "CMS simple, léger, sans base de données, modulable et responsive"
 
 version = "12.2.04~ynh2"
 
@@ -18,10 +18,10 @@ code = "https://forge.chapril.org/ZwiiCMS-Team/ZwiiCMS"
 fund = "https://ko-fi.com/T6T4FPG1A"
 
 [integration]
-yunohost = ">= 11.1.6"
+yunohost = ">= 11.1.15"
 architectures = "all"
 multi_instance = false
-ldap = "not_relevant" 
+ldap = "not_relevant"
 sso = "not_relevant"
 disk = "50M"
 ram.build = "50M"
@@ -55,10 +55,16 @@ ram.runtime = "50M"
     type = "password"
     
 [resources]
+
+    [resources.sources]
+
+        [resources.sources.main]
+        url = "https://forge.chapril.org/ZwiiCMS-Team/ZwiiCMS/archive/12.2.04.tar.gz"
+        sha256 = "c56be62e6e6f7eabe57f4eea4e5d17d8538488ce28962135879074635f3151c3"
+
     [resources.system_user]
 
     [resources.install_dir]
-    dir = "/var/www/__APP__"
     owner = "__APP__:rwx"
     group = "www-data:rx"
 
@@ -66,4 +72,4 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "php$YNH_DEFAULT_PHP_VERSION-mbstring,php$YNH_DEFAULT_PHP_VERSION-zip,php$YNH_DEFAULT_PHP_VERSION-GD,php$YNH_DEFAULT_PHP_VERSION-exif,php$YNH_DEFAULT_PHP_VERSION-XMLWriter"
+    packages = "php8.0-mbstring,php8.0-zip,php8.0-GD,php8.0-exif,php8.0-XMLWriter"
