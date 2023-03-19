@@ -60,7 +60,7 @@ ram.runtime = "50M"
 
         [resources.sources.main]
         url = "https://forge.chapril.org/ZwiiCMS-Team/ZwiiCMS/archive/12.2.04.tar.gz"
-        sha256 = "c56be62e6e6f7eabe57f4eea4e5d17d8538488ce28962135879074635f3151c3"
+        sha256 = "f39044334ece8ccbba1e8239ab84d7e9daee90cb758a1f9ece02627c6236f13e"
 
     [resources.system_user]
 
