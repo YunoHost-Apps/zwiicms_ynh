@@ -14,7 +14,7 @@ source /usr/share/yunohost/helpers
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Setting up source files..." --time --weight=
+ynh_script_progression --message="Setting up source files..." --weight=
 
 ynh_setup_source --dest_dir="$install_dir"
 
@@ -28,7 +28,7 @@ find "$install_dir" -type d -exec chmod +s {} \;
 #=================================================
 ynh_script_progression --message="Adding system configurations related to $app ..." --weight=1
 
-ynh_add_fpm_config
+ynh_add_fpm_config --usage=low --footprint=low
 
 ynh_add_nginx_config
 
@@ -56,4 +56,5 @@ ynh_local_curl "${installUrl}" "csrf=${csrf}" "installId=${installId}" "installP
 #=================================================
 # END OF SCRIPT
 #=================================================
+
 ynh_script_progression --message="Installation of $app completed" --last
