@@ -18,7 +18,7 @@
 
 # Fetching information
 current_version=$(cat manifest.toml | tomlq -j '.version|split("~")[0]')
-repo=$(cat manifest.toml | tomlq -j '.upstream.code|split("https://github.com/")[1]')
+repo=$(cat manifest.toml | tomlq -j '.upstream.code|split("https://forge.chapril.org/")[1]')
 
 version=$(curl --silent "https://forge.chapril.org/api/v1/repos/$repo/releases?draft=false&pre-release=false&limit=1" | jq -r '.[] | .tag_name')
 asset_url=$(curl --silent "https://forge.chapril.org/api/v1/repos/$repo/releases?draft=false&pre-release=false&limit=1" | jq -r '.[] | .tarball_url')
