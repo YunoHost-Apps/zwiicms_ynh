@@ -13,3 +13,7 @@
 #### 4. If needed, deactivate the maintenance mode
 
 ![Maintenance mode](./upgrade_process_3.png)
+
+#### 5. Save
+
+![Save](./upgrade_process_4.png)
