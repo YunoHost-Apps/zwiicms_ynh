@@ -34,8 +34,8 @@ find "$install_dir" -type d -exec chmod +s {} \;
 # UPDATE A CONFIG FILE
 #=================================================
 
-# Apply maintenance mode
-sed -i 's/"maintenance":[^,]*/"maintenance":true/g' "$install_dir/site/data/config.json"
+# Remove updateAvailable flag
+sed -i 's/"updateAvailable":[^,}]*/"updateAvailable":false/g' "$install_dir/site/data/core.json"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
