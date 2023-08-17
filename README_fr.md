@@ -16,20 +16,20 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 ## Vue d’ensemble
 
-Zwii is a database-less (flat-file) CMS that allows you to easily create and manage a web site without any programming knowledge.
+Zwii est un CMS sans base de données (fichier plat) qui vous permet de créer et de gérer facilement un site Web sans aucune connaissance en programmation.
 
-### Features
+### Caractéristiques
 
-- No Database
-- Multi-users
-- Multilingual
-- 100% responsive
-- WYSIWYG editor
-- Files manager
+- Pas de base de données
+- Multi-utilisateurs
+- Multilingue
+- 100% réactif
+- Éditeur WYSIWYG
+- Gestionnaire de fichiers
 - Flexible
 
 
-**Version incluse :** 12.4.00~ynh1
+**Version incluse :** 13.0.00~ynh1
 
 ## Captures d’écran
 
