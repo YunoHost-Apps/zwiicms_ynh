@@ -51,4 +51,5 @@ jobs:
           title: 'Upgrade to version ${{ env.VERSION }}'
           body: |
             Upgrade to v${{ env.VERSION }}
+            [See upstream release page](https://forge.chapril.org/${{ env.REPO }}/releases/tag/v${{ env.VERSION }})
           draft: false
