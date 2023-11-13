@@ -29,7 +29,7 @@ Zwii est un CMS sans base de données (fichier plat) qui vous permet de créer e
 - Flexible
 
 
-**Version incluse :** 13.0.06~ynh1
+**Version incluse :** 13.0.08~ynh1
 
 ## Captures d’écran
 
@@ -40,6 +40,7 @@ Zwii est un CMS sans base de données (fichier plat) qui vous permet de créer e
 * Site officiel de l’app : <https://zwiicms.com/>
 * Documentation officielle utilisateur : <https://www.zwiicms.fr/prise-en-main>
 * Dépôt de code officiel de l’app : <https://forge.chapril.org/ZwiiCMS-Team/ZwiiCMS>
+* YunoHost Store: <https://apps.yunohost.org/app/zwiicms>
 * Signaler un bug : <https://github.com/YunoHost-Apps/zwiicms_ynh/issues>
 
 ## Informations pour les développeurs
