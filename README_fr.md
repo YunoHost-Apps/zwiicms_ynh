@@ -29,7 +29,7 @@ Zwii est un CMS sans base de données (fichier plat) qui vous permet de créer e
 - Flexible
 
 
-**Version incluse :** 13.0.06~ynh1
+**Version incluse :** 13.0.08~ynh1
 
 ## Captures d’écran
 
