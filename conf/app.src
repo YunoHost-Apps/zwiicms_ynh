@@ -1,5 +1,5 @@
-SOURCE_URL=https://forge.chapril.org/ZwiiCMS-Team/ZwiiCMS/archive/13.1.00.tar.gz
-SOURCE_SUM=71381daf84426cc30d68791bf48e9c61e31e568d78f39e98d0ea66358313656a
+SOURCE_URL=https://forge.chapril.org/ZwiiCMS-Team/ZwiiCMS/archive/13.1.01.tar.gz
+SOURCE_SUM=5b1ddf9faa94fd130c5901eef5b7891f25a1c32ee42d1b674e36fdcb6dcf1c20
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
