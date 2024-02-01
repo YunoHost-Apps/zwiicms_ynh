@@ -5,7 +5,7 @@ name = "ZwiiCMS"
 description.en = "Simple, lightweight, database-free, scalable and responsive CMS"
 description.fr = "CMS simple, léger, sans base de données, modulable et responsive"
 
-version = "13.1.02~ynh1"
+version = "13.1.03~ynh1"
 
 maintainers = ["ewilly"]
 
