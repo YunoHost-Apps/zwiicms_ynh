@@ -37,11 +37,11 @@ Zwii is a database-less (flat-file) CMS that allows you to easily create and man
 
 ## Documentation and resources
 
-* Official app website: <https://zwiicms.com/>
-* Official user documentation: <https://www.zwiicms.fr/prise-en-main>
-* Upstream app code repository: <https://forge.chapril.org/ZwiiCMS-Team/ZwiiCMS>
-* YunoHost Store: <https://apps.yunohost.org/app/zwiicms>
-* Report a bug: <https://github.com/YunoHost-Apps/zwiicms_ynh/issues>
+- Official app website: <https://zwiicms.com/>
+- Official user documentation: <https://www.zwiicms.fr/prise-en-main>
+- Upstream app code repository: <https://forge.chapril.org/ZwiiCMS-Team/ZwiiCMS>
+- YunoHost Store: <https://apps.yunohost.org/app/zwiicms>
+- Report a bug: <https://github.com/YunoHost-Apps/zwiicms_ynh/issues>
 
 ## Developer info
 
