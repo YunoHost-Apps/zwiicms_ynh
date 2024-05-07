@@ -9,7 +9,7 @@ It shall NOT be edited by hand.
 
 [![Install ZwiiCMS with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=zwiicms)
 
-*[Read this README is other languages.](./ALL_README.md)*
+*[Read this README in other languages.](./ALL_README.md)*
 
 > *This package allows you to install ZwiiCMS quickly and simply on a YunoHost server.*  
 > *If you don't have YunoHost, please consult [the guide](https://yunohost.org/install) to learn how to install it.*
@@ -29,7 +29,7 @@ Zwii is a database-less (flat-file) CMS that allows you to easily create and man
 - Flexible
 
 
-**Shipped version:** 13.1.07~ynh1
+**Shipped version:** 13.3.00~ynh1
 
 ## Screenshots
 
