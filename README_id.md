@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # ZwiiCMS untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/zwiicms.svg)](https://ci-apps.yunohost.org/ci/apps/zwiicms/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/zwiicms.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/zwiicms.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/zwiicms)](https://ci-apps.yunohost.org/ci/apps/zwiicms/)
+![Status kerja](https://apps.yunohost.org/badge/state/zwiicms)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/zwiicms)
 
 [![Pasang ZwiiCMS dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=zwiicms)
 
@@ -29,7 +31,7 @@ Zwii is a database-less (flat-file) CMS that allows you to easily create and man
 - Flexible
 
 
-**Versi terkirim:** 13.4.00~ynh1
+**Versi terkirim:** 13.5.00~ynh1
 
 ## Tangkapan Layar
 
