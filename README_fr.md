@@ -5,7 +5,9 @@ Il NE doit PAS être modifié à la main.
 
 # ZwiiCMS pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/zwiicms.svg)](https://ci-apps.yunohost.org/ci/apps/zwiicms/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/zwiicms.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/zwiicms.maintain.svg)
+[![Niveau d’intégration](https://apps.yunohost.org/badge/integration/zwiicms)](https://ci-apps.yunohost.org/ci/apps/zwiicms/)
+![Statut du fonctionnement](https://apps.yunohost.org/badge/state/zwiicms)
+![Statut de maintenance](https://apps.yunohost.org/badge/maintained/zwiicms)
 
 [![Installer ZwiiCMS avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=zwiicms)
 
@@ -29,7 +31,7 @@ Zwii est un CMS sans base de données (fichier plat) qui vous permet de créer e
 - Flexible
 
 
-**Version incluse :** 13.4.00~ynh1
+**Version incluse :** 13.5.00~ynh1
 
 ## Captures d’écran
 

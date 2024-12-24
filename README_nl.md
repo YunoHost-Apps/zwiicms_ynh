@@ -5,7 +5,9 @@ Hij mag NIET handmatig aangepast worden.
 
 # ZwiiCMS voor Yunohost
 
-[![Integratieniveau](https://dash.yunohost.org/integration/zwiicms.svg)](https://ci-apps.yunohost.org/ci/apps/zwiicms/) ![Mate van functioneren](https://ci-apps.yunohost.org/ci/badges/zwiicms.status.svg) ![Onderhoudsstatus](https://ci-apps.yunohost.org/ci/badges/zwiicms.maintain.svg)
+[![Integratieniveau](https://apps.yunohost.org/badge/integration/zwiicms)](https://ci-apps.yunohost.org/ci/apps/zwiicms/)
+![Mate van functioneren](https://apps.yunohost.org/badge/state/zwiicms)
+![Onderhoudsstatus](https://apps.yunohost.org/badge/maintained/zwiicms)
 
 [![ZwiiCMS met Yunohost installeren](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=zwiicms)
 
@@ -29,7 +31,7 @@ Zwii is a database-less (flat-file) CMS that allows you to easily create and man
 - Flexible
 
 
-**Geleverde versie:** 13.4.00~ynh1
+**Geleverde versie:** 13.5.00~ynh1
 
 ## Schermafdrukken
 
