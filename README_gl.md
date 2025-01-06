@@ -31,7 +31,7 @@ Zwii is a database-less (flat-file) CMS that allows you to easily create and man
 - Flexible
 
 
-**Versión proporcionada:** 13.5.01~ynh1
+**Versión proporcionada:** 13.5.01~ynh2
 
 ## Capturas de pantalla
 
