@@ -5,7 +5,7 @@ name = "ZwiiCMS"
 description.en = "Simple, lightweight, database-free, scalable and responsive CMS"
 description.fr = "CMS simple, léger, sans base de données, modulable et responsive"
 
-version = "13.5.01~ynh1"
+version = "13.5.01~ynh2"
 
 maintainers = ["ewilly"]
 
@@ -50,8 +50,6 @@ ram.runtime = "50M"
     type = "user"
     
     [install.password]
-    help.en = "Use the help field to add an information for the admin about this question."
-    help.fr = "Utilisez le champ aide pour ajouter une information à l'intention de l'administrateur à propos de cette question."
     type = "password"
     
 [resources]
@@ -64,8 +62,6 @@ ram.runtime = "50M"
     [resources.system_user]
 
     [resources.install_dir]
-    owner = "__APP__:rwx"
-    group = "www-data:rx"
 
     [resources.permissions]
     main.url = "/"
