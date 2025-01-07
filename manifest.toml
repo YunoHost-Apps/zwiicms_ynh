@@ -55,7 +55,7 @@ ram.runtime = "50M"
 [resources]
     [resources.sources.main]
     url = "https://forge.chapril.org/ZwiiCMS-Team/ZwiiCMS/archive/13.5.02.tar.gz"
-    sha256 = "da6e4fe7669d96b67d521d421fb36d5784f19ac573d7e470af5356162181a635"
+    sha256 = "cb2927b55a7ab93f4cf1f6a42e9fe4cdcdcfaf4eb869827bdd02936fe2a25bf1"
     in_subdir = true
     autoupdate.strategy = "latest_forgejo_release"
 
