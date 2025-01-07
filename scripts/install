@@ -19,7 +19,7 @@ ynh_script_progression --message="Setting up source files..." --weight=
 ynh_setup_source --dest_dir="$install_dir"
 
 chown -R $app:www-data "$install_dir"
-find "$install_dir" -type f -exec chmod 640 {} \;
+find "$install_dir" -type f -exec chmod 660 {} \;
 find "$install_dir" -type d -exec chmod 750 {} \;
 find "$install_dir" -type d -exec chmod +s {} \;
 
@@ -31,8 +31,6 @@ ynh_script_progression --message="Adding system configurations related to $app .
 ynh_add_fpm_config --usage=low --footprint=low
 
 ynh_add_nginx_config
-
-ynh_use_logrotate
 
 #=================================================
 # APP INITIAL CONFIGURATION
