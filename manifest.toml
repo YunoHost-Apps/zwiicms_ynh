@@ -5,7 +5,7 @@ name = "ZwiiCMS"
 description.en = "Simple, lightweight, database-free, scalable and responsive CMS"
 description.fr = "CMS simple, léger, sans base de données, modulable et responsive"
 
-version = "13.5.02~ynh1"
+version = "13.5.03~ynh1"
 
 maintainers = ["ewilly"]
 
@@ -54,8 +54,8 @@ ram.runtime = "50M"
     
 [resources]
     [resources.sources.main]
-    url = "https://forge.chapril.org/ZwiiCMS-Team/ZwiiCMS/archive/13.5.02.tar.gz"
-    sha256 = "cb2927b55a7ab93f4cf1f6a42e9fe4cdcdcfaf4eb869827bdd02936fe2a25bf1"
+    url = "https://forge.chapril.org/ZwiiCMS-Team/ZwiiCMS/archive/13.5.03.tar.gz"
+    sha256 = "dc22eafbc56291894a8fcef1f656e4bcea96b1896e666f55d3a76b6792c9208f"
     in_subdir = true
     autoupdate.strategy = "latest_forgejo_release"
 
