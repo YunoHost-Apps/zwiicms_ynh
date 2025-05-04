@@ -11,7 +11,7 @@ maintainers = ["ewilly"]
 
 [upstream]
 license = " AGPL-3.0-or-later"
-website = "https://zwiicms.com/"
+website = "https://zwiicms.fr/"
 admindoc = ""
 userdoc = "https://www.zwiicms.fr/prise-en-main"
 code = "https://forge.chapril.org/ZwiiCMS-Team/ZwiiCMS"
