@@ -1,24 +1,17 @@
 #!/bin/bash
 
-#=================================================
-# GENERIC START
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
-
 source _common.sh
 source /usr/share/yunohost/helpers
 
-#=================================================
-# APP "BUILD" (DEPLOYING SOURCES, VENV, COMPILING ETC)
+ynh_app_setting_set --key=php_upload_max_filesize --value=256M
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Setting up source files..." --weight=
+ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
 
-chown -R $app:www-data "$install_dir"
 find "$install_dir" -type f -exec chmod 660 {} \;
 find "$install_dir" -type d -exec chmod 750 {} \;
 find "$install_dir" -type d -exec chmod +s {} \;
@@ -26,18 +19,16 @@ find "$install_dir" -type d -exec chmod +s {} \;
 #=================================================
 # SYSTEM CONFIGURATION
 #=================================================
-ynh_script_progression --message="Adding system configurations related to $app ..." --weight=1
+ynh_script_progression "Adding system configurations related to $app ..."
 
-ynh_add_fpm_config --usage=low --footprint=low
+ynh_config_add_phpfpm
 
-ynh_add_nginx_config
+ynh_config_add_nginx
 
 #=================================================
 # APP INITIAL CONFIGURATION
 #=================================================
-# SETUP APPLICATION WITH CURL
-#=================================================
-ynh_script_progression --message="Finalizing installation..." --weight=1
+ynh_script_progression "Finalizing installation..."
 
 installLanguage="$language"
 installUrl="/?install/postinstall/$installLanguage"
@@ -55,4 +46,4 @@ ynh_local_curl "${installUrl}" "csrf=${csrf}" "installId=${installId}" "installP
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Installation of $app completed" --last
+ynh_script_progression "Installation of $app completed"
