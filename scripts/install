@@ -6,15 +6,12 @@ source /usr/share/yunohost/helpers
 ynh_app_setting_set --key=php_upload_max_filesize --value=256M
 
 #=================================================
-# APP "BUILD" (DEPLOYING SOURCES, VENV, COMPILING ETC)
-#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
 
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R $app:www-data "$install_dir"
 find "$install_dir" -type f -exec chmod 660 {} \;
 find "$install_dir" -type d -exec chmod 750 {} \;
 find "$install_dir" -type d -exec chmod +s {} \;
@@ -30,8 +27,6 @@ ynh_config_add_nginx
 
 #=================================================
 # APP INITIAL CONFIGURATION
-#=================================================
-# SETUP APPLICATION WITH CURL
 #=================================================
 ynh_script_progression "Finalizing installation..."
 

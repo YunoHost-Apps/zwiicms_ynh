@@ -18,12 +18,14 @@ code = "https://forge.chapril.org/ZwiiCMS-Team/ZwiiCMS"
 fund = "https://ko-fi.com/T6T4FPG1A"
 
 [integration]
-yunohost = ">= 11.2.18"
+yunohost = ">= 12.0.9"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = false
+
 ldap = "not_relevant"
 sso = "not_relevant"
+
 disk = "50M"
 ram.build = "800M"
 ram.runtime = "50M"
@@ -69,4 +71,4 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "php8.3-mbstring, php8.3-zip, php8.3-gd, php8.3-xml, php8.3-intl"
+    packages = "php8.4-mbstring, php8.4-zip, php8.4-gd, php8.4-xml, php8.4-intl"
