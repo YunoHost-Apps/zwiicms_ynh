@@ -11,7 +11,7 @@ It shall NOT be edited by hand.
 Simple, lightweight, database-free, scalable and responsive CMS
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://zwiicms.fr/)
-[![Version: 13.6.02~ynh2](https://img.shields.io/badge/Version-13.6.02~ynh2-rgba(0,150,0,1)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/zwiicms/)
+[![Version: 13.6.07~ynh1](https://img.shields.io/badge/Version-13.6.07~ynh1-rgba(0,150,0,1)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/zwiicms/)
 
 <div align="center">
 <a href="https://apps.yunohost.org/app/zwiicms"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
@@ -22,7 +22,7 @@ Simple, lightweight, database-free, scalable and responsive CMS
 
 [![Automatic tests level](https://apps.yunohost.org/badge/cilevel/zwiicms)](https://ci-apps.yunohost.org/ci/apps/zwiicms/)
 
-🛠️ Upstream ZwiiCMS repository: <https://forge.chapril.org/ZwiiCMS-Team/ZwiiCMS>
+🛠️ Upstream ZwiiCMS repository: <https://codeberg.org/fredtempez/ZwiiCMS>
 
 Pull request are welcome and should target the [`testing` branch](https://github.com/YunoHost-Apps/zwiicms_ynh/tree/testing).
 
