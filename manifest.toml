@@ -73,7 +73,7 @@ ram.runtime = "50M"
 	[resources.apt]
 	packages_from_raw_bash = """
 	phpversion=$(curl -fsSL "https://packages.debian.org/$YNH_DEBIAN_VERSION/php" \
-		| grep -Eo "/$YNH_DEBIAN_VERSION/php[0-9]+\.[0-9]+" \
+		| grep -Eo "/$YNH_DEBIAN_VERSION/php[0-9].[0-9]" \
 		| sort -Vu | tail -n1 \
 		| sed "s@^/$YNH_DEBIAN_VERSION/php@@")
 
