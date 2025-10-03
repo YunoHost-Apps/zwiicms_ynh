@@ -5,7 +5,7 @@ name = "ZwiiCMS"
 description.en = "Simple, lightweight, database-free, scalable and responsive CMS"
 description.fr = "CMS simple, léger, sans base de données, modulable et responsive"
 
-version = "13.7.01~ynh1"
+version = "13.8.00~ynh1"
 
 maintainers = ["ewilly"]
 
@@ -31,44 +31,50 @@ ram.build = "800M"
 ram.runtime = "50M"
 
 [install]
-    [install.domain]
-    type = "domain"
+	[install.domain]
+	type = "domain"
 
-    [install.path]
-    type = "path"
-    default = "/zwiicms"
-    
-    [install.init_main_permission]
-    type = "group"
-    default = "visitors"
-    
-    [install.language]
-    ask.en = "Choose the application language"
-    ask.fr = "Choisissez la langue de l'application"
-    type = "select"
-    choices = ["fr_FR", "es", "it", "pt_PT", "en_EN", "gr_GR"]
-    default = "fr_FR"
-    
-    [install.admin]
-    type = "user"
-    
-    [install.password]
+	[install.path]
+	type = "path"
+	default = "/zwiicms"
+
+	[install.init_main_permission]
+	type = "group"
+	default = "visitors"
+
+	[install.language]
+	ask.en = "Choose the application language"
+	ask.fr = "Choisissez la langue de l'application"
+	type = "select"
+	choices = ["fr_FR", "es", "it", "pt_PT", "en_EN", "gr_GR"]
+	default = "fr_FR"
+
+	[install.admin]
+	type = "user"
+
+	[install.password]
     type = "password"
     
 [resources]
-    [resources.sources.main]
-    url = "https://codeberg.org/fredtempez/ZwiiCMS/archive/13.7.01.tar.gz"
-    sha256 = "9dea5620ec8118f81577c2f1f9fa7046e1186c2831867c890c30d4c1885a3a9a"
-    in_subdir = true
-    autoupdate.strategy = "latest_forgejo_release"
+	[resources.sources.main]
+	url = "https://codeberg.org/fredtempez/ZwiiCMS/archive/13.8.00.tar.gz"
+	sha256 = "62ff1c4687e90c860f8d91ef9e5c4ffcdc88e12bb796ca1e0cdeb1f91dd34cde"
+	in_subdir = true
+	autoupdate.strategy = "latest_forgejo_release"
 
-    [resources.system_user]
+	[resources.system_user]
 
-    [resources.install_dir]
-    group = "www-data:r-x"
+	[resources.install_dir]
+	group = "www-data:r-x"
 
-    [resources.permissions]
-    main.url = "/"
+	[resources.permissions]
+	main.url = "/"
 
-    [resources.apt]
-    packages = "php8.3-mbstring, php8.3-zip, php8.3-gd, php8.3-xml, php8.3-intl"
+	[resources.apt]
+	packages_from_raw_bash = """
+	php_default_debian_version=$(curl -fsSL "https://packages.debian.org/$YNH_DEBIAN_VERSION/php" \
+		| grep -Eo "/$YNH_DEBIAN_VERSION/php[0-9].[0-9]" \
+		| tail -n1 | sed "s@^/$YNH_DEBIAN_VERSION/php@@")
+
+	echo "php${php_default_debian_version}-mbstring, php${php_default_debian_version}-zip, php${php_default_debian_version}-gd, php${php_default_debian_version}-xml, php${php_default_debian_version}-intl";
+	"""
