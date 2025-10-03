@@ -31,44 +31,51 @@ ram.build = "800M"
 ram.runtime = "50M"
 
 [install]
-    [install.domain]
-    type = "domain"
+	[install.domain]
+	type = "domain"
 
-    [install.path]
-    type = "path"
-    default = "/zwiicms"
-    
-    [install.init_main_permission]
-    type = "group"
-    default = "visitors"
-    
-    [install.language]
-    ask.en = "Choose the application language"
-    ask.fr = "Choisissez la langue de l'application"
-    type = "select"
-    choices = ["fr_FR", "es", "it", "pt_PT", "en_EN", "gr_GR"]
-    default = "fr_FR"
-    
-    [install.admin]
-    type = "user"
-    
-    [install.password]
+	[install.path]
+	type = "path"
+	default = "/zwiicms"
+
+	[install.init_main_permission]
+	type = "group"
+	default = "visitors"
+
+	[install.language]
+	ask.en = "Choose the application language"
+	ask.fr = "Choisissez la langue de l'application"
+	type = "select"
+	choices = ["fr_FR", "es", "it", "pt_PT", "en_EN", "gr_GR"]
+	default = "fr_FR"
+
+	[install.admin]
+	type = "user"
+
+	[install.password]
     type = "password"
     
 [resources]
-    [resources.sources.main]
-    url = "https://codeberg.org/fredtempez/ZwiiCMS/archive/13.8.00.tar.gz"
-    sha256 = "62ff1c4687e90c860f8d91ef9e5c4ffcdc88e12bb796ca1e0cdeb1f91dd34cde"
-    in_subdir = true
-    autoupdate.strategy = "latest_forgejo_release"
+	[resources.sources.main]
+	url = "https://codeberg.org/fredtempez/ZwiiCMS/archive/13.8.00.tar.gz"
+	sha256 = "62ff1c4687e90c860f8d91ef9e5c4ffcdc88e12bb796ca1e0cdeb1f91dd34cde"
+	in_subdir = true
+	autoupdate.strategy = "latest_forgejo_release"
 
-    [resources.system_user]
+	[resources.system_user]
 
-    [resources.install_dir]
-    group = "www-data:r-x"
+	[resources.install_dir]
+	group = "www-data:r-x"
 
-    [resources.permissions]
-    main.url = "/"
+	[resources.permissions]
+	main.url = "/"
 
-    [resources.apt]
-    packages = "php-mbstring, php-zip, php-gd, php-xml, php-intl"
+	[resources.apt]
+	packages_from_raw_bash = """
+	phpversion=$(curl -fsSL "https://packages.debian.org/$YNH_DEBIAN_VERSION/php" \
+		| grep -Eo "/$YNH_DEBIAN_VERSION/php[0-9]+\.[0-9]+" \
+		| sort -Vu | tail -n1 \
+		| sed "s@^/$YNH_DEBIAN_VERSION/php@@")
+
+	echo "php${phpversion}-mbstring, php${phpversion}-zip, php${phpversion}-gd, php${phpversion}-xml, php${phpversion}-intl";
+	"""
