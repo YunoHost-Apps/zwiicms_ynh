@@ -72,9 +72,7 @@ ram.runtime = "50M"
 
 	[resources.apt]
 	packages_from_raw_bash = """
-	php_default_debian_version=$(curl -fsSL "https://packages.debian.org/$YNH_DEBIAN_VERSION/php" \
-		| grep -Eo "/$YNH_DEBIAN_VERSION/php[0-9].[0-9]" \
-		| tail -n1 | sed "s@^/$YNH_DEBIAN_VERSION/php@@")
+	php_default_debian_version=$( apt-cache depends php | grep -Eo "php[0-9].[0-9]" | sed "s@^php@@" )
 
 	echo "php${php_default_debian_version}-mbstring, php${php_default_debian_version}-zip, php${php_default_debian_version}-gd, php${php_default_debian_version}-xml, php${php_default_debian_version}-intl";
 	"""
