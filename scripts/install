@@ -15,6 +15,12 @@ find "$install_dir" -type f -exec chmod 660 {} \;
 find "$install_dir" -type d -exec chmod 750 {} \;
 find "$install_dir" -type d -exec chmod +s {} \;
 
+#Fix the issue to access the config page with nginx
+ynh_replace \
+    --match="and self::isModRewriteEnabled()" \
+    --replace="//and self::isModRewriteEnabled()" \
+    --file="$install_dir/core/module/config/view/setup/setup.php"
+
 #=================================================
 # SYSTEM CONFIGURATION
 #=================================================
