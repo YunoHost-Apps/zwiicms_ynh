@@ -9,10 +9,6 @@ ynh_script_progression "Restoring the app main directory..."
 
 ynh_restore "$install_dir"
 
-find "$install_dir" -type f -exec chmod 660 {} \;
-find "$install_dir" -type d -exec chmod 750 {} \;
-find "$install_dir" -type d -exec chmod +s {} \;
-
 #=================================================
 # RESTORE SYSTEM CONFIGURATIONS
 #=================================================
