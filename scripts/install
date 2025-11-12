@@ -11,12 +11,6 @@ ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
 
-#Fix the issue to access the config page with nginx
-ynh_replace \
-    --match="and self::isModRewriteEnabled()" \
-    --replace="//and self::isModRewriteEnabled()" \
-    --file="$install_dir/core/module/config/view/setup/setup.php"
-
 #=================================================
 # SYSTEM CONFIGURATION
 #=================================================
