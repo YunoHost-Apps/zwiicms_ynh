@@ -15,9 +15,12 @@ ynh_setup_source --dest_dir="$install_dir"
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-
 # Remove updateAvailable flag
-sed -i 's/"updateAvailable":[^,}]*/"updateAvailable":false/g' "$install_dir/site/data/core.json"
+ynh_replace --match='"updateAvailable":true' --replace='"updateAvailable":false' --file="$install_dir/site/data/core.json"
+ynh_replace --match='"updateModuleAvailable":true' --replace='"updateModuleAvailable":false' --file="$install_dir/site/data/core.json"
+
+# Disable autoUpdate
+ynh_replace --match='"autoUpdate":true' --replace='"autoUpdate":false' --file="$install_dir/site/data/config.json"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS

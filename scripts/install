@@ -11,6 +11,9 @@ ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
 
+# Disable autoUpdate
+ynh_replace --match='"autoUpdate":true' --replace='"autoUpdate":false' --file="$install_dir/core/module/install/ressource/defaultdata.php"
+
 #=================================================
 # SYSTEM CONFIGURATION
 #=================================================
