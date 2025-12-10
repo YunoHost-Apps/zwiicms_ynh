@@ -5,12 +5,12 @@ name = "ZwiiCMS"
 description.en = "Simple, lightweight, database-free, scalable and responsive CMS"
 description.fr = "CMS simple, léger, sans base de données, modulable et responsive"
 
-version = "13.11.01~ynh1"
+version = "13.11.02~ynh1"
 
 maintainers = ["ewilly"]
 
 [upstream]
-license = " AGPL-3.0-or-later"
+license = "CC-BY-NC-ND-4.0"
 website = "https://zwiicms.fr/"
 admindoc = ""
 userdoc = "https://www.zwiicms.fr/prise-en-main"
@@ -57,8 +57,8 @@ ram.runtime = "50M"
     
 [resources]
 	[resources.sources.main]
-	url = "https://codeberg.org/fredtempez/ZwiiCMS/archive/13.11.01.tar.gz"
-	sha256 = "c7ea20ecb66112d501d9b7f4ac0233a841cb2e69ee8fb45655c27c2c9000aa6b"
+	url = "https://codeberg.org/fredtempez/ZwiiCMS/archive/13.11.02.tar.gz"
+	sha256 = "eb647b17ef88f05f69019e0395f8be07ed47b3e557032ea839d4d03e7879fc5c"
 	in_subdir = true
 	autoupdate.strategy = "latest_forgejo_release"
 
