@@ -5,7 +5,7 @@ name = "ZwiiCMS"
 description.en = "Simple, lightweight, database-free, scalable and responsive CMS"
 description.fr = "CMS simple, léger, sans base de données, modulable et responsive"
 
-version = "13.11.03~ynh1"
+version = "13.11.03~ynh2"
 
 maintainers = ["ewilly"]
 
@@ -18,7 +18,7 @@ code = "https://codeberg.org/fredtempez/ZwiiCMS"
 fund = "https://ko-fi.com/T6T4FPG1A"
 
 [integration]
-yunohost = ">= 12.1.17"
+yunohost = ">= 12.1.38"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = false
