@@ -10,7 +10,7 @@ version = "14.00.00~ynh1"
 maintainers = ["ewilly"]
 
 [upstream]
-license = "CC-BY-NC-ND-4.0"
+license = "GPL-3.0-or-later"
 website = "https://zwiicms.fr/"
 admindoc = ""
 userdoc = "https://www.zwiicms.fr/prise-en-main"
