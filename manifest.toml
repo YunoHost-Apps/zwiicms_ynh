@@ -58,7 +58,7 @@ ram.runtime = "50M"
 [resources]
 	[resources.sources.main]
 	url = "https://codeberg.org/fredtempez/ZwiiCMS/archive/15.0.08.tar.gz"
-	sha256 = "aef18bf5c66999de118364495fc80a2112d63ebe6268f94a77318b7e9b7066eb"
+	sha256 = "ac3c56e5a4be9159eff854c3afb04c802969cb2aab44fa9ed2318129a7bc907f"
 	in_subdir = true
 	autoupdate.strategy = "latest_forgejo_release"
 
