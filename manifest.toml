@@ -18,7 +18,7 @@ code = "https://codeberg.org/fredtempez/ZwiiCMS"
 fund = "https://ko-fi.com/T6T4FPG1A"
 
 [integration]
-yunohost = ">= 12.1.38"
+yunohost = ">= 12.1.40"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -58,7 +58,7 @@ ram.runtime = "50M"
 [resources]
 	[resources.sources.main]
 	url = "https://codeberg.org/fredtempez/ZwiiCMS/archive/15.1.03.tar.gz"
-	sha256 = "aaf514a92e1adcfe853c8c769c99b1b4bf50ed1640ce1368b7090bd05c2324b1"
+	sha256 = "882d3222f0c570f1311cbcbfb10b96cd18be9bf77fc60649671327a3e2ad2b92"
 	in_subdir = true
 	autoupdate.strategy = "latest_forgejo_release"
 
@@ -71,4 +71,4 @@ ram.runtime = "50M"
 	main.url = "/"
 
 	[resources.apt]
-	packages = "php8.3-mbstring, php8.3-zip, php8.3-gd, php8.3-xml, php8.3-intl"
+	packages = "php8.4-mbstring, php8.4-zip, php8.4-gd, php8.4-xml, php8.4-intl"
