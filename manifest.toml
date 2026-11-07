@@ -5,7 +5,7 @@ name = "ZwiiCMS"
 description.en = "Simple, lightweight, database-free, scalable and responsive CMS"
 description.fr = "CMS simple, léger, sans base de données, modulable et responsive"
 
-version = "15.2.01~ynh1"
+version = "16.0.00~ynh1"
 
 maintainers = ["ewilly"]
 
@@ -46,7 +46,7 @@ ram.runtime = "50M"
 	ask.en = "Choose the application language"
 	ask.fr = "Choisissez la langue de l'application"
 	type = "select"
-	choices = ["fr_FR", "es", "it", "pt_PT", "en_EN", "gr_GR"]
+	choices = ["de", "en_EN", "es", "fr_FR", "gr_GR", "it", "pt_PT", "tr_TR"]
 	default = "fr_FR"
 
 	[install.admin]
@@ -57,8 +57,8 @@ ram.runtime = "50M"
     
 [resources]
 	[resources.sources.main]
-	url = "https://codeberg.org/fredtempez/ZwiiCMS/archive/15.2.01.tar.gz"
-	sha256 = "ef513d107c4214689b303d81146fe2e265a3efce682275752512db6dc3aee2cc"
+	url = "https://codeberg.org/fredtempez/ZwiiCMS/archive/16.0.00.tar.gz"
+	sha256 = "5ea6883bb90d608f7aae6555b1e59cab731978532c83bb0cbf2a4ce9339d5d7a"
 	in_subdir = true
 	autoupdate.strategy = "latest_forgejo_release"
 
@@ -71,4 +71,4 @@ ram.runtime = "50M"
 	main.url = "/"
 
 	[resources.apt]
-	packages = "php8.4-mbstring, php8.4-zip, php8.4-gd, php8.4-xml, php8.4-intl"
+	packages = "php8.5-mbstring, php8.5-zip, php8.5-gd, php8.5-xml, php8.5-intl"
