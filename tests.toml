@@ -2,20 +2,21 @@ test_format = 1.0
 
 [default]
 
-    # ------------
-    # Tests to run
-    # ------------
+	# ------------
+	# Tests to run
+	# ------------
 
-    
 
-    # -------------------------------
-    # Default args to use for install
-    # -------------------------------
-    
-    
 
-    # -------------------------------
-    # Commits to test upgrade from
-    # -------------------------------
+	# -------------------------------
+	# Default args to use for install
+	# -------------------------------
+
+
+
+	# -------------------------------
+	# Commits to test upgrade from
+	# -------------------------------
+	test_upgrade_from.a0b5d57.name = "Upgrade from 15.2.01~ynh1"
 
     
